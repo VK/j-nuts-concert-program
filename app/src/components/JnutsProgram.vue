@@ -1,6 +1,6 @@
 <template>
   <div ref="programDiv">
-    <v-sheet style="height: 100vh;">
+    <v-sheet style="min-height: 100vh;">
       <div class="w-100 text-center pa-3" v-if="offline || ignore">
 
         <v-card elevation="4" outlined shaped v-for="el in daten" v-bind:key="el.id" class="mb-2">

@@ -1,26 +1,26 @@
 export default [
     {
       id: 1,
-      title: "Welcome to the Black Parade",
-      artist: "My Chemical Romance",
-      author: "Andreas Carlsson, Max Martin",
-      arr: "Viktor Krückl"
+      title: "Title",
+      artist: "Gruppe",
+      author: "???",
+      arr: "???"
     },
 
     {
       id: 2,
-      title: "Welcome to the Black Parade",
-      artist: "My Chemical Romance",
-      author: "Andreas Carlsson, Max Martin",
-      arr: "Viktor Krückl"
+      title: "Title",
+      artist: "Gruppe",
+      author: "???",
+      arr: "???"
     },
 
     {
       id: 3,
-      title: "Welcome to the Black Parade",
-      artist: "My Chemical Romance",
-      author: "Andreas Carlsson, Max Martin",
-      arr: "Viktor Krückl"
+      title: "Title",
+      artist: "Gruppe",
+      author: "???",
+      arr: "???"
     },
 
     {
@@ -29,26 +29,26 @@ export default [
 
     {
       id: 4,
-      title: "Welcome to the Black Parade",
-      artist: "My Chemical Romance",
-      author: "Andreas Carlsson, Max Martin",
-      arr: "Viktor Krückl"
+      title: "Title",
+      artist: "Gruppe",
+      author: "???",
+      arr: "???"
     },
 
 
     {
       id: 5,
-      title: "Welcome to the Black Parade",
-      artist: "My Chemical Romance",
-      author: "Andreas Carlsson, Max Martin",
-      arr: "Viktor Krückl"
+      title: "Title",
+      artist: "Gruppe",
+      author: "???",
+      arr: "???"
     },
 
     {
       id: 6,
-      title: "Welcome to the Black Parade",
-      artist: "My Chemical Romance",
-      author: "Andreas Carlsson, Max Martin",
-      arr: "Viktor Krückl"
+      title: "Title",
+      artist: "Gruppe",
+      author: "???",
+      arr: "???"
     },
   ]
