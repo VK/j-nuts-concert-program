@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <v-sheet>
+  <div ref="programDiv">
+    <v-sheet style="height: 100vh;">
       <div class="w-100 text-center pa-3" v-if="offline || ignore">
 
         <v-card elevation="4" outlined shaped v-for="el in daten" v-bind:key="el.id" class="mb-2">
@@ -22,7 +22,7 @@
       </div>
       <div v-else class="w-100 text-center text-h3 pa-3">
         Bitte verwenden Sie den Flugmodus!<br />
-        <v-icon :size="airplaneSIze">mdi-airplane-check</v-icon><br />
+        <v-icon :size="airplaneSize">mdi-airplane-check</v-icon><br />
         <v-btn elevation="2" x-large @click="ign">Ignorieren</v-btn>
       </div>
     </v-sheet>
@@ -51,7 +51,7 @@ export default {
   }),
 
   computed: {
-    airplaneSIze() {
+    airplaneSize() {
       return (this.iWidth * 0.5).toString() + "px";
     },
     progSize() {
@@ -66,9 +66,27 @@ export default {
     ign() {
       this.ignore = true;
     },
+    update_size() {
+      if (this.$refs.programDiv) {
+        let new_min = Math.min(
+          this.$refs.programDiv.clientHeight,
+          this.$refs.programDiv.clientWidth
+        );
+
+        this.iWidth = new_min - 20;
+        this.iHeight = this.iWidth;
+
+      }
+    }
   },
 
+
+  
   mounted() {
+    window.addEventListener("resize", () => {
+      this.update_size();
+    });
+    setTimeout(this.update_size(), 5000);
 
     check().then((state) => {
       this.offline = state;
@@ -88,4 +106,7 @@ export default {
   border-width: 2px;
   color: #ffffff;
 }
+
+
+
 </style>
